@@ -1,0 +1,26 @@
+[2025-07-14T12:33:04.983Z] INFO: Server running on port 3001
+[2025-07-14T12:33:04.992Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-14T13:20:37.435Z] INFO: ::1 - - [14/Jul/2025:13:20:37 +0000] "GET /health HTTP/1.1" 200 88 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:20:37.719Z] INFO: ::1 - - [14/Jul/2025:13:20:37 +0000] "GET /favicon.ico HTTP/1.1" 404 52 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:21:34.191Z] INFO: Server running on port 3001
+[2025-07-14T13:21:34.202Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-14T13:21:42.485Z] INFO: Server running on port 3001
+[2025-07-14T13:21:42.492Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-14T13:21:46.527Z] INFO: Server running on port 3001
+[2025-07-14T13:21:46.534Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-14T13:23:54.258Z] INFO: Server running on port 3000
+[2025-07-14T13:23:54.266Z] INFO: Health check available at http://localhost:3000/health
+[2025-07-14T13:24:16.296Z] INFO: ::1 - - [14/Jul/2025:13:24:16 +0000] "GET /health HTTP/1.1" 200 88 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:24:16.484Z] INFO: ::1 - - [14/Jul/2025:13:24:16 +0000] "GET /favicon.ico HTTP/1.1" 404 52 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:31:05.188Z] INFO: ::1 - - [14/Jul/2025:13:31:05 +0000] "GET /search HTTP/1.1" 404 52 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:32:31.529Z] INFO: ::1 - - [14/Jul/2025:13:32:31 +0000] "GET /api/soundcloud/search HTTP/1.1" 400 61 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:35:29.006Z] INFO: ::1 - - [14/Jul/2025:13:35:29 +0000] "GET /api/soundcloud/search?=love HTTP/1.1" 400 61 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:35:41.370Z] INFO: ::1 - - [14/Jul/2025:13:35:41 +0000] "GET /api/soundcloud/search?love HTTP/1.1" 400 61 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:39:00.554Z] INFO: Search request: query="love", page=1, limit=6
+[2025-07-14T13:39:00.557Z] INFO: Making SoundCloud API request with params: [{"client_id":"d652006c469530a4a7d61864b","q":"love","limit":6,"offset":0,"linked_partitioning":1}]
+[2025-07-14T13:39:01.234Z] INFO: ::1 - - [14/Jul/2025:13:39:01 +0000] "GET /api/soundcloud/search?q=love HTTP/1.1" 401 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-14T13:41:54.481Z] INFO: Server running on port 3000
+[2025-07-14T13:41:54.489Z] INFO: Health check available at http://localhost:3000/health
+[2025-07-14T13:42:03.598Z] INFO: Search request: query="love", page=1, limit=6
+[2025-07-14T13:42:03.600Z] INFO: Making SoundCloud API request with params: [{"client_id":"d652006c469530a4a7d6184b18e16c81","q":"love","limit":6,"offset":0,"linked_partitioning":1}]
+[2025-07-14T13:42:04.080Z] INFO: ::1 - - [14/Jul/2025:13:42:04 +0000] "GET /api/soundcloud/search?q=love HTTP/1.1" 401 65 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
