@@ -72,6 +72,10 @@ function App() {
     handleSearch(query);
   };
 
+  const handleHistoryUpdate = (updatedHistory) => {
+    setSearchHistory(updatedHistory);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="container mx-auto px-4 py-8">
@@ -95,14 +99,13 @@ function App() {
         </div>
 
         {/* Search History */}
-        {searchHistory.length > 0 && (
-          <div className="max-w-2xl mx-auto mb-8">
-            <SearchHistory 
-              history={searchHistory}
-              onHistorySearch={handleHistorySearch}
-            />
-          </div>
-        )}
+        <div className="max-w-2xl mx-auto mb-8">
+          <SearchHistory 
+            history={searchHistory}
+            onHistorySearch={handleHistorySearch}
+            onHistoryUpdate={handleHistoryUpdate}
+          />
+        </div>
 
         {/* Error Message */}
         {error && (

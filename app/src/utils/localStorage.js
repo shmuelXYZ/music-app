@@ -1,7 +1,68 @@
 // localStorage utility functions for search history
 
-const SEARCH_HISTORY_KEY = 'soundcloud_search_history';
-const MAX_HISTORY_ITEMS = 5;
+const SEARCH_HISTORY_KEY = 'youtube_search_history';
+const SEARCH_HISTORY_LIMIT_KEY = 'youtube_search_history_limit';
+const DEFAULT_MAX_HISTORY_ITEMS = 5;
+
+/**
+ * Get the current search history limit
+ * @returns {number} The maximum number of history items to keep
+ */
+export const getSearchHistoryLimit = () => {
+  try {
+    const limit = localStorage.getItem(SEARCH_HISTORY_LIMIT_KEY);
+    return limit ? parseInt(limit, 10) : DEFAULT_MAX_HISTORY_ITEMS;
+  } catch (error) {
+    console.error('Error getting search history limit:', error);
+    return DEFAULT_MAX_HISTORY_ITEMS;
+  }
+};
+
+/**
+ * Set the search history limit
+ * @param {number} limit - The new limit for search history items
+ * @returns {string[]} Updated search history (trimmed if necessary)
+ */
+export const setSearchHistoryLimit = (limit) => {
+  try {
+    const newLimit = Math.max(1, Math.min(50, parseInt(limit, 10))); // Limit between 1-50
+    localStorage.setItem(SEARCH_HISTORY_LIMIT_KEY, newLimit.toString());
+    
+    // Get current history and trim if necessary
+    let history = getSearchHistory();
+    if (history.length > newLimit) {
+      history = history.slice(0, newLimit);
+      localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(history));
+    }
+    
+    return history;
+  } catch (error) {
+    console.error('Error setting search history limit:', error);
+    return getSearchHistory();
+  }
+};
+
+/**
+ * Reorder search history
+ * @param {string[]} newOrder - The new order of search history items
+ * @returns {string[]} Updated search history
+ */
+export const reorderSearchHistory = (newOrder) => {
+  try {
+    if (!Array.isArray(newOrder)) {
+      return getSearchHistory();
+    }
+
+    const limit = getSearchHistoryLimit();
+    const trimmedOrder = newOrder.slice(0, limit);
+    
+    localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(trimmedOrder));
+    return trimmedOrder;
+  } catch (error) {
+    console.error('Error reordering search history:', error);
+    return getSearchHistory();
+  }
+};
 
 /**
  * Get search history from localStorage
@@ -41,8 +102,9 @@ export const addToSearchHistory = (query) => {
     // Add the new query to the beginning
     history.unshift(trimmedQuery);
     
-    // Keep only the most recent MAX_HISTORY_ITEMS
-    history = history.slice(0, MAX_HISTORY_ITEMS);
+    // Keep only the most recent items based on current limit
+    const limit = getSearchHistoryLimit();
+    history = history.slice(0, limit);
     
     // Save to localStorage
     localStorage.setItem(SEARCH_HISTORY_KEY, JSON.stringify(history));
