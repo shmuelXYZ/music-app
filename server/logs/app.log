@@ -107,3 +107,9 @@
 [2025-07-15T08:15:20.228Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"r.e.m","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAYQAA"}]
 [2025-07-15T08:15:20.800Z] INFO: YouTube search completed: 6 videos found
 [2025-07-15T08:15:20.803Z] INFO: ::1 - - [15/Jul/2025:08:15:20 +0000] "GET /api/youtube/next?pageToken=CAYQAA&q=r.e.m&limit=6 HTTP/1.1" 200 13913 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T08:56:48.797Z] INFO: Server running on port 3001
+[2025-07-15T08:56:48.805Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-15T08:57:13.378Z] INFO: YouTube search request: query="r.e.m", page=1, limit=6, pageToken=undefined
+[2025-07-15T08:57:13.381Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"r.e.m","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T08:57:13.959Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T08:57:13.965Z] INFO: ::1 - - [15/Jul/2025:08:57:13 +0000] "GET /api/youtube/search?q=r.e.m&page=1&limit=6 HTTP/1.1" 200 13872 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
