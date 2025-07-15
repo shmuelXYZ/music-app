@@ -80,10 +80,62 @@
   }
 }
 
+@keyframes dragPulse {
+  0%, 100% { 
+    transform: scale(1); 
+  }
+  50% { 
+    transform: scale(1.05); 
+  }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.3s ease-in-out;
 }
 
 .animate-slide-up {
   animation: slideUp 0.4s ease-out;
+}
+
+.animate-drag-pulse {
+  animation: dragPulse 0.6s ease-in-out infinite;
+}
+
+/* Drag and drop styles */
+.drag-item {
+  transition: all 0.2s ease;
+}
+
+.drag-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.drag-item.dragging {
+  opacity: 0.6;
+  transform: rotate(2deg) scale(0.95);
+  z-index: 1000;
+}
+
+.drag-item.drag-over {
+  border-color: #f97316 !important;
+  background-color: #fed7aa !important;
+}
+
+/* Custom scrollbar for drag areas */
+.drag-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.drag-container::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.drag-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.drag-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }

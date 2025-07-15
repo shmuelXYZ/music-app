@@ -113,3 +113,84 @@
 [2025-07-15T08:57:13.381Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"r.e.m","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
 [2025-07-15T08:57:13.959Z] INFO: YouTube search completed: 6 videos found
 [2025-07-15T08:57:13.965Z] INFO: ::1 - - [15/Jul/2025:08:57:13 +0000] "GET /api/youtube/search?q=r.e.m&page=1&limit=6 HTTP/1.1" 200 13872 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:19:54.852Z] INFO: ::1 - - [15/Jul/2025:11:19:54 +0000] "GET /search?q=love HTTP/1.1" 404 52 "-" "bruno-runtime/2.7.0"
+[2025-07-15T11:20:52.750Z] INFO: ::1 - - [15/Jul/2025:11:20:52 +0000] "GET /search?q=love HTTP/1.1" 404 52 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:20:53.194Z] INFO: ::1 - - [15/Jul/2025:11:20:53 +0000] "GET /favicon.ico HTTP/1.1" 404 52 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:40:16.350Z] INFO: Server running on port 3001
+[2025-07-15T11:40:16.359Z] INFO: Health check available at http://localhost:3001/health
+[2025-07-15T11:45:34.256Z] INFO: YouTube search request: query="apple", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:45:34.260Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"apple","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:45:35.142Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:45:35.150Z] INFO: ::1 - - [15/Jul/2025:11:45:35 +0000] "GET /api/youtube/search?q=apple&page=1&limit=6 HTTP/1.1" 200 12978 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:49:12.965Z] INFO: YouTube search request: query="קרליבך", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:49:12.968Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:49:13.610Z] INFO: YouTube search completed: 8 videos found
+[2025-07-15T11:49:13.612Z] INFO: ::1 - - [15/Jul/2025:11:49:13 +0000] "GET /api/youtube/search?q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&page=1&limit=6 HTTP/1.1" 200 20911 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:49:37.734Z] INFO: YouTube search request: query="apple", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:49:37.737Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"apple","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:49:38.225Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:49:38.230Z] INFO: ::1 - - [15/Jul/2025:11:49:38 +0000] "GET /api/youtube/search?q=apple&page=1&limit=6 HTTP/1.1" 304 - "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:50:55.838Z] INFO: YouTube next page request: pageToken=CAYQAA, query="apple", limit=6
+[2025-07-15T11:50:55.843Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"apple","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAYQAA"}]
+[2025-07-15T11:50:56.439Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:50:56.443Z] INFO: ::1 - - [15/Jul/2025:11:50:56 +0000] "GET /api/youtube/next?pageToken=CAYQAA&q=apple&limit=6 HTTP/1.1" 200 13793 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:51:19.531Z] INFO: YouTube search request: query="3 נםר'מ", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:51:19.533Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"3 נםר'מ","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:51:19.999Z] INFO: YouTube search completed: 0 videos found
+[2025-07-15T11:51:20.002Z] INFO: ::1 - - [15/Jul/2025:11:51:20 +0000] "GET /api/youtube/search?q=3+%D7%A0%D7%9D%D7%A8%27%D7%9E&page=1&limit=6 HTTP/1.1" 200 238 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:55:37.039Z] INFO: YouTube search request: query="ywllow dude", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:55:37.045Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"ywllow dude","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:55:37.506Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:55:37.510Z] INFO: ::1 - - [15/Jul/2025:11:55:37 +0000] "GET /api/youtube/search?q=ywllow+dude&page=1&limit=6 HTTP/1.1" 200 13380 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:55:45.097Z] INFO: YouTube next page request: pageToken=CAYQAA, query="ywllow dude", limit=6
+[2025-07-15T11:55:45.099Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"ywllow dude","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAYQAA"}]
+[2025-07-15T11:55:45.586Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:55:45.589Z] INFO: ::1 - - [15/Jul/2025:11:55:45 +0000] "GET /api/youtube/next?pageToken=CAYQAA&q=ywllow+dude&limit=6 HTTP/1.1" 200 13550 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:55:50.261Z] INFO: YouTube next page request: pageToken=CAwQAA, query="ywllow dude", limit=6
+[2025-07-15T11:55:50.264Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"ywllow dude","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAwQAA"}]
+[2025-07-15T11:55:50.760Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:55:50.764Z] INFO: ::1 - - [15/Jul/2025:11:55:50 +0000] "GET /api/youtube/next?pageToken=CAwQAA&q=ywllow+dude&limit=6 HTTP/1.1" 200 12998 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:56:01.538Z] INFO: YouTube search request: query="ywllow dude channle", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:56:01.541Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"ywllow dude channle","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:56:02.050Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:56:02.056Z] INFO: ::1 - - [15/Jul/2025:11:56:02 +0000] "GET /api/youtube/search?q=ywllow+dude+channle&page=1&limit=6 HTTP/1.1" 200 12998 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:56:41.578Z] INFO: YouTube search request: query="apple", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:56:41.583Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"apple","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:56:42.079Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T11:56:42.085Z] INFO: ::1 - - [15/Jul/2025:11:56:42 +0000] "GET /api/youtube/search?q=apple&page=1&limit=6 HTTP/1.1" 200 13377 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T11:57:33.986Z] INFO: YouTube search request: query="veritasume", page=1, limit=6, pageToken=undefined
+[2025-07-15T11:57:33.989Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"veritasume","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T11:57:34.429Z] INFO: YouTube search completed: 0 videos found
+[2025-07-15T11:57:34.433Z] INFO: ::1 - - [15/Jul/2025:11:57:34 +0000] "GET /api/youtube/search?q=veritasume&page=1&limit=6 HTTP/1.1" 200 237 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:12:41.174Z] INFO: YouTube search request: query="קרליבך", page=1, limit=6, pageToken=undefined
+[2025-07-15T12:12:41.177Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T12:12:41.751Z] INFO: YouTube search completed: 8 videos found
+[2025-07-15T12:12:41.758Z] INFO: ::1 - - [15/Jul/2025:12:12:41 +0000] "GET /api/youtube/search?q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&page=1&limit=6 HTTP/1.1" 200 20476 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:07.594Z] INFO: YouTube next page request: pageToken=CAYQAA, query="קרליבך", limit=6
+[2025-07-15T12:14:07.598Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAYQAA"}]
+[2025-07-15T12:14:08.212Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:08.216Z] INFO: ::1 - - [15/Jul/2025:12:14:08 +0000] "GET /api/youtube/next?pageToken=CAYQAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 15750 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:11.553Z] INFO: YouTube next page request: pageToken=CAwQAA, query="קרליבך", limit=6
+[2025-07-15T12:14:11.555Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CAwQAA"}]
+[2025-07-15T12:14:11.961Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:11.964Z] INFO: ::1 - - [15/Jul/2025:12:14:11 +0000] "GET /api/youtube/next?pageToken=CAwQAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 15198 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:15.288Z] INFO: YouTube next page request: pageToken=CBIQAA, query="קרליבך", limit=6
+[2025-07-15T12:14:15.290Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CBIQAA"}]
+[2025-07-15T12:14:15.748Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:15.752Z] INFO: ::1 - - [15/Jul/2025:12:14:15 +0000] "GET /api/youtube/next?pageToken=CBIQAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 14922 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:18.536Z] INFO: YouTube next page request: pageToken=CBgQAA, query="קרליבך", limit=6
+[2025-07-15T12:14:18.538Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CBgQAA"}]
+[2025-07-15T12:14:18.950Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:18.953Z] INFO: ::1 - - [15/Jul/2025:12:14:18 +0000] "GET /api/youtube/next?pageToken=CBgQAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 14907 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:20.658Z] INFO: YouTube next page request: pageToken=CB4QAA, query="קרליבך", limit=6
+[2025-07-15T12:14:20.660Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CB4QAA"}]
+[2025-07-15T12:14:21.128Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:21.131Z] INFO: ::1 - - [15/Jul/2025:12:14:21 +0000] "GET /api/youtube/next?pageToken=CB4QAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 15348 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:14:23.060Z] INFO: YouTube next page request: pageToken=CCQQAA, query="קרליבך", limit=6
+[2025-07-15T12:14:23.062Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"קרליבך","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance","pageToken":"CCQQAA"}]
+[2025-07-15T12:14:23.459Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:14:23.461Z] INFO: ::1 - - [15/Jul/2025:12:14:23 +0000] "GET /api/youtube/next?pageToken=CCQQAA&q=%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A&limit=6 HTTP/1.1" 200 15099 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+[2025-07-15T12:15:17.911Z] INFO: YouTube search request: query="cloude code", page=1, limit=6, pageToken=undefined
+[2025-07-15T12:15:17.914Z] INFO: Making YouTube API request with params: [{"key":"AIzaSyDJ8D1z6KA55zDOKnRDjgbRQR-Su_DSen8","part":"snippet","q":"cloude code","type":"video","videoCategoryId":"10","maxResults":6,"order":"relevance"}]
+[2025-07-15T12:15:18.462Z] INFO: YouTube search completed: 6 videos found
+[2025-07-15T12:15:18.466Z] INFO: ::1 - - [15/Jul/2025:12:15:18 +0000] "GET /api/youtube/search?q=cloude+code&page=1&limit=6 HTTP/1.1" 200 13650 "http://localhost:4000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
