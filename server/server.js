@@ -4,7 +4,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
 
-const soundcloudRoutes = require('./routes/soundcloud');
+const youtubeRoutes = require('./routes/youtube');
 const { logger } = require('./utils/logger');
 
 const app = express();
@@ -16,7 +16,7 @@ app.use(helmet());
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['http://localhost:3000'] // Add your frontend URLs here
+    ? ['http://localhost:3000', 'http://localhost:4000'] // Add your frontend URLs here
     : true, // Allow all origins in development
   credentials: true,
   optionsSuccessStatus: 200
@@ -36,12 +36,15 @@ app.get('/health', (req, res) => {
   res.status(200).json({ 
     status: 'OK', 
     timestamp: new Date().toISOString(),
-    service: 'SoundCloud API Server'
+    service: 'YouTube API Server'
   });
 });
 
 // API routes
-app.use('/api/soundcloud', soundcloudRoutes);
+app.use('/api/youtube', youtubeRoutes);
+
+// Keep backward compatibility with soundcloud routes
+app.use('/api/soundcloud', youtubeRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
