@@ -128,7 +128,7 @@ function App() {
             <div className="mb-6 text-center">
               <p className="text-gray-600">
                 Showing {tracks.length} videos
-                {totalResults > 0 && ` of ${totalResults.toLocaleString()} results`} 
+                {totalResults > 0 && ` of ${totalResults.toLocaleString()} results `} 
                 for "{currentQuery}"
               </p>
             </div>

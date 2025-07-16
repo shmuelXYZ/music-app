@@ -4,6 +4,12 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
 
+// Debug: Check if API key is loaded
+console.log('🔑 YouTube API Key loaded:', process.env.YOU_TUBE_API_KEY ? 'YES' : 'NO');
+if (process.env.YOU_TUBE_API_KEY) {
+  console.log('🔑 API Key starts with:', process.env.YOU_TUBE_API_KEY.substring(0, 10) + '...');
+}
+
 const youtubeRoutes = require('./routes/youtube');
 const { logger } = require('./utils/logger');
 
@@ -44,7 +50,7 @@ app.get('/health', (req, res) => {
 app.use('/api/youtube', youtubeRoutes);
 
 // Keep backward compatibility with soundcloud routes
-app.use('/api/soundcloud', youtubeRoutes);
+//app.use('/api/soundcloud', youtubeRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
